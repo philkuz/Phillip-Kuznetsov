@@ -1,0 +1,29 @@
+application: philrkuz
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+
+handlers:
+- url: /
+  static_files: index.html
+  upload: index\.html
+
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: js
+
+- url: /fonts
+  static_dir: fonts
+- url: /img
+  static_dir: img
+  
+- url: /app\.js
+  static_files: js/app.js
+  upload: app\.js
+
+- url: /.*
+  script: philrkuz.application

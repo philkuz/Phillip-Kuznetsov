@@ -1,0 +1,9 @@
+.about-links > a:link{
+	text-decoration: none;
+}
+.about-links > a:visited{
+	text-decoration: none;
+}
+.about-links > b > a:link{
+	text-decoration: none;
+}

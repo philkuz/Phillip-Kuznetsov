@@ -10,6 +10,31 @@ handlers:
   static_files: index.html
   upload: index\.html
 
+- url: /projects
+  static_files: projects.html
+  upload: projects\.html
+
+- url: /fnn
+  static_files: fnn.html
+  upload: fnn\.html
+
+- url: /geneengine
+  static_files: gene.html
+  upload: gene\.html
+
+- url: /westconnect
+  static_files: west.html
+  upload: west\.html
+- url: /tuna
+  static_files: tuna.html
+  upload: tuna\.html
+- url: /resume
+  static_files: resume.pdf
+  upload: resume\.pdf
+
+- url: /about
+  static_files: about.html
+  upload: about\.html
 - url: /css
   static_dir: css
 
@@ -18,12 +43,15 @@ handlers:
 
 - url: /fonts
   static_dir: fonts
+
 - url: /img
   static_dir: img
-  
+
 - url: /app\.js
   static_files: js/app.js
   upload: app\.js
 
 - url: /.*
   script: philrkuz.application
+
+

@@ -1,0 +1,98 @@
+<!-- !DOCTYPE html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phillip Kuznetsov's Website</title>
+  	<!-- alternatively head to 2015/libraries for css and js bootstrap--> 
+  	<link rel="stylesheet" href="css/bootstrap.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- General shit. Check if there is a more update version -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/handlebars-v2.0.0.js"></script>
+    <!-- alternatively head to 2015/libraries for css and js bootstrap--> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/ember-1.9.1.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <script type="text/x-handlebars">
+      <div class="container bodeh">
+        <!-- navbar -->
+        <nav class ="navbar navbar-default">
+          <div class = "container-fluid">
+            <div class = "nav navbar-header">
+              {{#link-to "index" classNames="navbar-brand"}}
+                <img alt = "Brand" src = "img/badge.png">
+              {{/link-to}}
+              <button type="button" class = "navbar-toggle collapsed" data-toggle = "collapse" data-target = "#navbar">
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+              </button>
+            </div>
+            <div id="navbar" class = "navbar-collapse collapse">
+              <ul class = "nav navbar-nav navbar-right">
+                <!--Drop down list for blog/about -->
+                <li>{{#link-to 'index'}}Home{{/link-to}}</li>
+                <li>{{#link-to 'projects'}}Projects{{/link-to}}</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        {{outlet}}
+      </div>
+    </script> 
+    <script type="text/x-handlebars" id="index">
+      <div class ="row bodeh">
+        <div class ="col-lg-12">
+          <h1>Phillip Kuznetsovs Website</h1>
+          <br/>
+          <p>I am a senior at West High School. I am very invested in computer science and have worked on a variety of projects. If you would like to see some of the projects I have worked on, check out my <a href="http://github.com/philkuz">github</a> and my other projects. I also have other hobbies like music reviewing. If you want to see the music I have been listening to, check out my blog post.</p>
+        </div>
+      </div>
+    </script>
+    <script type="text/x-handlebars" id="projects">
+      <div class = "row bodeh">
+        <div class ="col-lg-12">
+            <h1>Projects</h1>
+        </div>
+        {{#each project in model}}
+          <div {{bind-attr class=project.sass style=project.image}}>
+            <div class="cont">
+              <h1><a {{bind-attr href=project.lynk}}>{{project.title}}</a></h1>
+               <p>{{project.body}}</p>
+            </div>
+            {{#if project.isExtended}}
+              <div class="extraMat">
+                <button type="button"{{action 'contract' project}}>Contract</button>
+                <p>{{project.content}}</p>
+              </div>
+            {{else}}
+              <button type="button"{{action 'expand' project}}>Expand</button>
+            {{/if}}
+            
+          </div>
+        {{/each}}
+      </div>
+
+    </script>
+    <script type="text/x-handlebars" id="admin">
+      <div class = "jumbotron">
+        <h1>Admin Page</h1>
+      </div>
+    </script>
+
+    <!--Views-->
+
+    <!-- The Project View  -->
+    <script type="text/x-handlebars" id ="proj">
+      <div class="col-lg-4 col-md-6" style=>
+
+      </div>
+    </script>
+  </body>
+</html>

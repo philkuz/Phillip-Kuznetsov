@@ -1,106 +1,180 @@
-<!-- !DOCTYPE html -->
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Phillip Kuznetsov's Website</title>
-  	<!-- alternatively head to 2015/libraries for css and js bootstrap--> 
-  	<link rel="stylesheet" href="css/bootstrap.css">
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/hover.css">
-    
-    <!-- General shit. Check if there is a more update version -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/handlebars-v2.0.0.js"></script>
-    <!-- alternatively head to 2015/libraries for css and js bootstrap--> 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="js/ember-1.9.1.js"></script>
-    <script src="js/app.js"></script>
-  </head>
-  <body>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Phillip Kuznetsov</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="about">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Phillip Kuznetsov</h1>
+                        <hr class="small">
+                        <span class="subheading"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
     <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 class = "site-heading">Projects</h1>
+                <div class="post-preview">
+                    <a href="fnn">
+                        <h2 class="post-title">
+                            Functional Neural Networks
+                        </h2>
+                        <h3 class="post-subtitle">
+                           The exploration of mathematical properties that appear as the number of nodes in each layer of a network approach infinity.
+                        </h3>
+                    </a>
+                   
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="westconnect">
+                        <h2 class="post-title">
+                            West Connect
+                        </h2>
+                        <h3 class="post-subtitle">
+                           An application that aims to reduce transportation emissions at my high school.
+                        </h3>
+                    </a>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="geneengine">
+                        <h2 class="post-title">
+                            Gene Engine
+                        </h2>
+                        <h3 class="post-subtitle">
+                            A computational simulation of the evolution of sexual selection 
+                        </h3>
+                    </a>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="tuna">
+                        <h2 class="post-title">
+                            Tuna
+                        </h2>
+                        <h3 class="post-subtitle">
+                            A music rating service based off a quantitative analysis of songs.
+                        </h3>
+                    </a>
+                </div>
+                <!-- <hr> -->
+                <!-- Pager -->
+                <!-- <ul class="pager">
+                    <li class="next">
+                        <a href="#">Older Posts &rarr;</a>
+                    </li>
+                </ul> -->
+            </div>
+        </div>
     </div>
-    <script type="text/x-handlebars">
-      <div class="container">
-        <div role="navigation" class ="navbar navbar-default">
-          <div class = "container">
-            <div class = "nav navbar-header">
-              
-              <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-                <span class = "icon-bar"></span>
-                <span class = "icon-bar"></span>
-                <span class = "icon-bar"></span>
-              </button>
-              <ul class = "nav navbar-nav">
-                <li>{{#link-to 'index'}}Phillip Kuznetsov{{/link-to}}</li>
-              </ul>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                     
+                        <li>
+                            <a href="https://www.github.com/philkuz">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Phillip Kuznetsov 2015</p>
+                </div>
             </div>
-            <div class = "navbar-collapse collapse ">
-              <ul class = "nav navbar-nav navbar-right">
-                <!--Drop down list for blog/about -->
-                <li>{{#link-to 'index'}}Home{{/link-to}}</li>
-                <li>{{#link-to 'projects'}}Projects{{/link-to}}</li>
-              </ul>
-            </div>
-          </div>
         </div>
-        {{outlet}}
-      </div>
-      
-    </script> 
-    <script type="text/x-handlebars" id="index">
-      <div class ="row bodeh">
-        <div class ="col-lg-12">
-          <h1>Phillip Kuznetsovs Website</h1>
-          <br/>
-          <p>I am a senior at West High School. I am very invested in computer science and have worked on a variety of projects. If you would like to see some of the projects I have worked on, check out my <a href="http://github.com/philkuz">github</a> and my other projects. I also have other hobbies like music reviewing. If you want to see the music I have been listening to, check out that data.
-          </p>
-        </div>
-      </div>
-    </script>
-    <script type="text/x-handlebars" id="projects">
-      <div class = "row bodeh">
-        <div class ="col-lg-12">
-            <h1>Projects</h1>
-        </div>
-        {{#each model}}
-          <div {{bind-attr class=sass style=image}}>
-            <h3><a {{bind-attr href=lynk}}>{{title}}</a></h3>
-            <p>{{body}}</p>
-          </div>
-          </div>
-        {{/each}}
-      </div>
+    </footer>
 
-    </script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-    <script type="text/x-handlebars" data-template-name="blog">
-    	<div class ="container">
-        <div class = "row">
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-          {{#each}}
-      			<div class ="col-lg-4 col-md-6" >
-    				  <h1>{{title}}</h1>
-              <p>{{text}}</p>
-      			</div>
-          {{else}}
-            <div class = "span12">
-              <p>No</p>
-            </div>
-          {{/each}}
-    		</div>
-    	</div>
-    </script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
 
-    <!--Views-->
+</body>
 
-    <!-- The Project View  -->
-    <script type="text/x-handlebars" id ="proj">
-      <div class="col-lg-4 col-md-6" style=>
-
-      </div>
-    </script>
-  </body>
 </html>

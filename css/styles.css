@@ -15,4 +15,18 @@
 }
 .intro-header{
 	text-align: center;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+.intro-header .site-heading, 
+.intro-header .post-heading, 
+.intro-header .page-heading {
+	padding: 50px 0 50px;
+  	color: white;
+}
+@media only screen and (min-width: 768px)
+.intro-header .site-heading, 
+.intro-header .post-heading, 
+.intro-header .page-heading {
+	padding: 50px 0 50px;
 }

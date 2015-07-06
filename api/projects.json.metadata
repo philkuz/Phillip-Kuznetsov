@@ -1,0 +1,9 @@
+title 		//the title of the project
+link 		//should reference a template-id of a template located in project.part.html
+summary 	//a condensed version of what's in the project 
+content 	//should be the url of the file that contains the content.
+
+
+
+//skeleton object
+{"title": "", "link": "", "summary": "", "content":""}

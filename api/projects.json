@@ -1,0 +1,6 @@
+[
+	{"title": "Functional Neural Networks", "link": "fnn", "summary": "A novel mathematical expansion of neural networks.", "content": "projects/fnn.html"},
+	{"title": "West Connect", "link": "westconnect", "summary": "Transportation application for West High School", "content": "projects/westconnect.html"},
+	{"title": "Tuna", "link": "tuna", "summary": "A music rating service based off a quantitative analysis of songs.", "content":"projects/tuna.html"}, 
+	{"title": "Gene Engine", "link": "geneengine", "summary": " A computational simulation of the evolution of sexual selection.", "content":"projects/gene.html"}
+]

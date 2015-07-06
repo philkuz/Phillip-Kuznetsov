@@ -1,0 +1,33 @@
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+        <div class="container" data-ng-controller="SuperCtrl">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>{{title}}</h1>
+                        <hr class="small">
+                        <span class="subheading"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container" data-ng-controller="ProjectCtrl">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview" ng-repeat="project in projects">
+                    <a ng-href="#/projects/{{project.link}}">
+                        <h2 class="post-title">
+                            {{project.title}}
+                        </h2>
+                        <h3 class="post-subtitle">
+                            {{project.summary}}
+                        </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>

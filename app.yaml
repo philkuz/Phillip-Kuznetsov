@@ -20,16 +20,16 @@ handlers:
 
 #static dirs
 - url: /css
-  static_dir: css
+  static_dir: static/css
 
 - url: /js
-  static_dir: js
+  static_dir: static/js
 
 - url: /fonts
-  static_dir: fonts
+  static_dir: static/fonts
 
 - url: /img
-  static_dir: img
+  static_dir: static/img
 
 - url: /blog
   static_dir: blogposts
@@ -45,5 +45,3 @@ handlers:
 #404'd
 - url: /.*
   script: philrkuz.application
-
-

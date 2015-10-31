@@ -30,7 +30,8 @@ handlers:
 
 - url: /img
   static_dir: static/img
-
+- url: /thumb
+  static_dir: static/img/thumbnails
 - url: /blog
   static_dir: blogposts
 

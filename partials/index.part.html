@@ -16,17 +16,22 @@
 
     <!-- Main Content -->
     <div class="container" data-ng-controller="ProjectCtrl">
+        <h2 class="section-header">Projects</h2>
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-preview" ng-repeat="project in projects">
-                    <a ng-href="#/projects/{{project.link}}">
-                        <h2 class="post-title">
-                            {{project.title}}
-                        </h2>
-                        <h3 class="post-subtitle">
-                            {{project.summary}}
-                        </h3>
-                    </a>
+            <div class="col-lg-6 col-md-5" ng-repeat="project in projects">
+                <div class="post-preview" back-img="{{project.thumb}}">
+                    <div class="post-body">
+                        <div class="project-title">
+                            <a ng-href="{{project.link|projecturl}}">
+                                <h2 class="post-title">
+                                    {{project.title}}
+                                </h2>
+                            </a>
+                        </div>
+                        <div class="project-summary">
+                            <p>{{project.summary}}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

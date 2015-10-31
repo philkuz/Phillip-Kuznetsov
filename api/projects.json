@@ -1,6 +1,42 @@
 [
-	{"title": "Functional Neural Networks", "link": "fnn", "summary": "A novel mathematical expansion of neural networks.", "content": "projects/fnn.html"},
-	{"title": "West Connect", "link": "westconnect", "summary": "Transportation application for West High School", "content": "projects/westconnect.html"},
-	{"title": "Tuna", "link": "tuna", "summary": "A music rating service based off a quantitative analysis of songs.", "content":"projects/tuna.html"}, 
-	{"title": "Gene Engine", "link": "geneengine", "summary": " A computational simulation of the evolution of sexual selection.", "content":"projects/gene.html"}
+	{
+		"title": "BUDAS",
+		"link":"http://calautogolf.github.io",
+		"summary":"The Berkeley autonmous driving and sensing project. I am currently the computer vision team lead.",
+		"thumb":"thumb/whatslit.png"
+	},
+	{
+		"title": "What's Lit",
+		"link":"http://whatslit.io",
+		"summary": "Crowd-sourced events rating app",
+		"thumb": "thumb/whatslit.png"
+	},
+	{
+		"title": "Functional Neural Networks",
+		"link": "fnn",
+		"summary": "A novel mathematical expansion of neural networks.",
+		"content": "projects/fnn.html",
+		"thumb": "thumb/fnn.png"
+	},
+	{
+		"title": "West Connect",
+		"link": "westconnect",
+		"summary": "Transportation application for West High School",
+		"content": "projects/westconnect.html",
+		"thumb": "thumb/wconnect.png"
+	},
+	{
+		"title": "Tuna",
+		"link": "tuna",
+		"summary": "A music rating service based off a quantitative analysis of songs.",
+		"content":"projects/tuna.html",
+		"thumb": "thumb/tuna.png"
+	},
+	{
+		"title": "Gene Engine",
+		"link": "geneengine",
+		"summary": " A computational simulation of the evolution of sexual selection.",
+		"content":"projects/gene.html",
+		"thumb": "thumb/gene.png"
+	}
 ]

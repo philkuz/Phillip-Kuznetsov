@@ -20,6 +20,7 @@
 	text-align: center;
 	padding-bottom: 0px;
 	padding-top: 0px;
+	margin-bottom: 0px
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
@@ -62,6 +63,22 @@
 }
 .section-header{
 	font-size: 40px;
+}
+.content-b{
+	background-color: #f8f8f8;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.content-a {
+	background-color: #ffffff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.img-circle > img{
+	border-width: 1px;
+	border-radius: 50%;
+	vertical-align: middle;
 }
 /*@media (min-width: 768px) {
 }*/

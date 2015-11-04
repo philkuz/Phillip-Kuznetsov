@@ -12,7 +12,7 @@ handlers:
   upload: index\.html
 
 - url: /resume
-  static_files: resume.pdf
+  static_files: static/files/resume.pdf
   upload: resume\.pdf
 
 - url: /about

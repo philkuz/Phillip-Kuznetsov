@@ -1,4 +1,4 @@
-$('.post-preview').click(function(){console.log('lbitch')});
+
 // $(document).ready(function(){
 //     $('.post-preview').click(function(){console.log('lbitch')});
 //     $('.post-preview').on(
@@ -18,14 +18,15 @@ $('.post-preview').click(function(){console.log('lbitch')});
 //         }
 //     });
 // });
+// handler for the project display 
 $(document).on({
-        mouseenter: function()
-        {
-            $(this).find('.project-summary').slideDown();
-        },
-        mouseleave: function()
-        {
-            $(this).find('.project-summary').slideUp();
-        },
+    mouseenter: function()
+    {
+        $(this).find('.project-summary').slideDown();
     },
-    '.post-preview');
+    mouseleave: function()
+    {
+        $(this).find('.project-summary').slideUp();
+    },
+},
+'.post-preview');

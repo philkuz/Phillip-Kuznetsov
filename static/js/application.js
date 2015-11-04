@@ -1,7 +1,7 @@
 var siteApp = angular.module('personalSite', ['ngRoute']);
 siteApp.value('title', "Phillip Kuznetsov"); //title handler
 // route setup
-siteApp.config(function($routeProvider){
+siteApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
 	$routeProvider.
 		when('/', {
 			templateUrl: 'partials/index.part.html'
@@ -14,7 +14,11 @@ siteApp.config(function($routeProvider){
 		}).otherwise({
 			redirectTo: '/'
 		});
-});
+	$locationProvider.html5Mode({
+		enabled: true,
+		requireBase: false
+	});
+}]);
 // url path creation
 siteApp.filter('projecturl', function(){
 	return function(string){

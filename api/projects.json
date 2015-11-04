@@ -9,34 +9,34 @@
 		"title": "What's Lit",
 		"link":"http://github.com/whatslit",
 		"summary": "Team development of a mobile and web application used to connect individuals to events in their area. EmberJS frontend, Django backend, and Postgres database. Working on the full-stack. ",
-		"thumb": "thumb/whatslit.png"
+		"thumb": "/thumb/whatslit.png"
 	},
 	{
 		"title": "Functional Neural Networks",
 		"link": "fnn",
 		"summary": "A novel mathematical expansion of neural networks.",
-		"content": "projects/fnn.html",
-		"thumb": "thumb/fnn.png"
+		"content": "/projects/fnn.html",
+		"thumb": "/thumb/fnn.png"
 	},
 	{
 		"title": "West Connect",
 		"link": "westconnect",
 		"summary": "Transportation application for West High School",
-		"content": "projects/westconnect.html",
-		"thumb": "thumb/wconnect.png"
+		"content": "/projects/westconnect.html",
+		"thumb": "/thumb/wconnect.png"
 	},
 	{
 		"title": "Tuna",
 		"link": "tuna",
 		"summary": "A music rating service based off a quantitative analysis of songs.",
-		"content":"projects/tuna.html",
-		"thumb": "thumb/tuna.png"
+		"content":"/projects/tuna.html",
+		"thumb": "/thumb/tuna.png"
 	},
 	{
 		"title": "Gene Engine",
 		"link": "geneengine",
 		"summary": " A computational simulation of the evolution of sexual selection.",
-		"content":"projects/gene.html",
-		"thumb": "thumb/gene.png"
+		"content":"/projects/gene.html",
+		"thumb": "/thumb/gene.png"
 	}
 ]

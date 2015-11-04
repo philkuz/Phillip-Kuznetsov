@@ -4,13 +4,15 @@ siteApp.value('title', "Phillip Kuznetsov"); //title handler
 siteApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
 	$routeProvider.
 		when('/', {
-			templateUrl: 'partials/index.part.html'
-		// }).when('/about', {
-		// 	templateUrl: 'partials/about.part.html'
-		// }).when('/projects', {
-		// 	templateUrl: 'partials/projectbrowser.part.html'
+			templateUrl: '/partials/index.part.html'
+		}).when('/about', {
+			// templateUrl: 'partials/about.part.html'
+			redirectTo: '/#about'
+		}).when('/projects', {
+			// templateUrl: 'partials/projectbrowser.part.html'
+			redirectTo: '/#projects'
 		}).when('/projects/:link', {
-			templateUrl: 'partials/project.part.html'
+			templateUrl: '/partials/project.part.html'
 		}).otherwise({
 			redirectTo: '/'
 		});
@@ -25,7 +27,7 @@ siteApp.filter('projecturl', function(){
 		if(string.indexOf("http") > -1)
 			return string;
 		else
-			return "#/projects/"+string;
+			return "/projects/"+string;
 	};
 });
 // project information grabber

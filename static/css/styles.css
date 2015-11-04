@@ -58,9 +58,11 @@
 	margin-top:0;
 	margin-bottom: 0;
 }
-.project-summary{
-	display:none;
-	-webkit-backface-visibility: hidden;
+@media (min-width: 1024px){
+	.project-summary{
+		display:none;
+		-webkit-backface-visibility: hidden;
+	}
 }
 .section-header{
 	font-size: 40px;

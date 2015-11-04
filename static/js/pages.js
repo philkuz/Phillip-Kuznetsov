@@ -18,19 +18,26 @@
 //         }
 //     });
 // });
-// handler for the project display
-$(document).on({
-    mouseenter: function()
-    {
-        $(this).find('.project-summary').slideDown();
-    },
-    mouseleave: function()
-    {
-        $(this).find('.project-summary').slideUp();
-    },
-},
-'.post-preview');
-//smooth scrolling 
+$(document).ready(function(){
+    // handler for the project display
+    var MQL = 1024;
+    //primary navigation slide-in effect
+    if ($(window).width() > MQL) {
+        console.log('width is large')
+        $(document).on({
+            mouseenter: function()
+            {
+                $(this).find('.project-summary').slideDown();
+            },
+            mouseleave: function()
+            {
+                $(this).find('.project-summary').slideUp();
+            },
+        }, '.post-preview');
+    }
+});
+
+//smooth scrolling
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

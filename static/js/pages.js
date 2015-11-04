@@ -18,7 +18,7 @@
 //         }
 //     });
 // });
-// handler for the project display 
+// handler for the project display
 $(document).on({
     mouseenter: function()
     {
@@ -30,3 +30,18 @@ $(document).on({
     },
 },
 '.post-preview');
+//smooth scrolling 
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});

@@ -5,10 +5,10 @@ siteApp.config(['$routeProvider', '$locationProvider', function($routeProvider, 
 	$routeProvider.
 		when('/', {
 			templateUrl: 'partials/index.part.html'
-		}).when('/about', {
-			templateUrl: 'partials/about.part.html'
-		}).when('/projects', {
-			templateUrl: 'partials/projectbrowser.part.html'
+		// }).when('/about', {
+		// 	templateUrl: 'partials/about.part.html'
+		// }).when('/projects', {
+		// 	templateUrl: 'partials/projectbrowser.part.html'
 		}).when('/projects/:link', {
 			templateUrl: 'partials/project.part.html'
 		}).otherwise({
@@ -56,8 +56,8 @@ siteApp.controller('SuperCtrl', ['$scope', 'title', function($scope, title){
 	$scope.title = title;
 	$scope.links = [
 		{"string" : "Home", 		"url" : "/"		},
-		{"string" : "About", 		"url" :"/#/about"	},
-		{"string" : "Projects", 	"url" :"/#/projects"}];
+		{"string" : "About", 		"url" :"/#about"	},
+		{"string" : "Projects", 	"url" :"/#projects"}];
 }]);
 // the project controller to display all projects
 siteApp.controller('ProjectCtrl', ['$scope', 'Projects', function($scope, Projects){

@@ -85,7 +85,7 @@ $('#name').focus(function() {
  // * License: MIT <http://opensource.org/licenses/mit-license.php> - see LICENSE file
  // *
  // * http://ReactiveRaven.github.com/jqBootstrapValidation/
- 
+
 
 (function( $ ){
 
@@ -557,7 +557,7 @@ $('#name').focus(function() {
                 // How many errors did we find?
                 if (settings.options.semanticallyStrict && errorsFound.length === 1) {
                   // Only one? Being strict? Just output it.
-                  $helpBlock.html(errorsFound[0] + 
+                  $helpBlock.html(errorsFound[0] +
                     ( settings.options.prependExistingHelpBlock ? $helpBlock.data("original-contents") : "" ));
                 } else {
                   // Multiple? Being sloppy? Glue them together into an UL.
@@ -1019,10 +1019,10 @@ jQuery(document).ready(function($) {
                     if (currentTop > 0 && $('.navbar-custom').hasClass('is-fixed')) {
                         $('.navbar-custom').addClass('is-visible');
                     } else {
-                        $('.navbar-custom').removeClass('is-visible is-fixed');
+                        $('.navbar-custom').removeClass('is-fixed');
                     }
                 } else {
-                    //if scrolling down...
+                    // if scrolling down...
                     $('.navbar-custom').removeClass('is-visible');
                     if (currentTop > headerHeight && !$('.navbar-custom').hasClass('is-fixed')) $('.navbar-custom').addClass('is-fixed');
                 }

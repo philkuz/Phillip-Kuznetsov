@@ -2,13 +2,13 @@
 	{
 		"title": "BUDAS",
 		"link":"http://calautogolf.github.io",
-		"summary":"The Berkeley autonmous driving and sensing project. I am currently the computer vision team lead.",
-		"thumb":"thumb/whatslit.png"
+		"summary":"The Berkeley autonmous driving and sensing project. Currently working towards outfitting an RC car with autonomous capabilities. Long term goal of making an autonomous golf cart for use on campus.",
+		"thumb":"thumb/rc_car.png"
 	},
 	{
 		"title": "What's Lit",
-		"link":"http://whatslit.io",
-		"summary": "Crowd-sourced events rating app",
+		"link":"http://github.com/whatslit",
+		"summary": "Team development of a mobile and web application used to connect individuals to events in their area. EmberJS frontend, Django backend, and Postgres database. Working on the full-stack. ",
 		"thumb": "thumb/whatslit.png"
 	},
 	{

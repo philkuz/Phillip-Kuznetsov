@@ -13,11 +13,7 @@ handlers:
 
 - url: /resume
   static_files: static/files/resume.pdf
-  upload: resume\.pdf
-
-- url: /about
-  static_files: about.html
-  upload: about\.html
+  upload: static/files/resume.pdf
 
 #static dirs
 - url: /css
@@ -33,8 +29,8 @@ handlers:
   static_dir: static/img
 - url: /thumb
   static_dir: static/img/thumbnails
-- url: /blog
-  static_dir: blogposts
+# - url: /blog
+#   static_dir: blogposts
 
 - url: /api
   static_dir: api
@@ -42,7 +38,7 @@ handlers:
 - url: /partials
   static_dir: partials
 
-- url: /projects
+- url: /projs
   static_dir: projects
 #404'd
 - url: /.*

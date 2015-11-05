@@ -15,28 +15,28 @@
 		"title": "Functional Neural Networks",
 		"link": "fnn",
 		"summary": "A novel mathematical expansion of neural networks. Takes the idea of functional interpolation and applies it to the structure of the neural network in order to input continuous data as is rather than requiring feature selection that reduces data.",
-		"content": "/projects/fnn.html",
+		"content": "/projs/fnn.html",
 		"thumb": "/thumb/fnn.png"
 	},
 	{
 		"title": "West Connect",
 		"link": "westconnect",
 		"summary": "Transportation application made for my high school. Encourages students to reduce their carbon footprint by displaying their current carbon footprint and display their more environmentally friendly alternatives. ",
-		"content": "/projects/westconnect.html",
+		"content": "/projs/westconnect.html",
 		"thumb": "/thumb/wconnect.png"
 	},
 	{
 		"title": "Tuna",
 		"link": "tuna",
 		"summary": "A music rating service based off a quantitative analysis of songs.",
-		"content":"/projects/tuna.html",
+		"content":"/projs/tuna.html",
 		"thumb": "/thumb/tuna.png"
 	},
 	{
 		"title": "Gene Engine",
 		"link": "geneengine",
 		"summary": " A computational simulation on the evolution of Major Histocompatibility Complex based sexual selection. Utilizes a parasite-organism model to display the advantage of choosing dissimilar MHC sequences for sexual partners.",
-		"content":"/projects/gene.html",
+		"content":"/projs/gene.html",
 		"thumb": "/thumb/gene.png"
 	}
 ]

@@ -11,6 +11,8 @@ siteApp.config(['$routeProvider', '$locationProvider', function($routeProvider, 
 		}).when('/projects', {
 			// templateUrl: 'partials/projectbrowser.part.html'
 			redirectTo: '/#projects'
+		// }).when('/resume', {
+		// 	redirectTo:'/'
 		}).when('/projects/:link', {
 			templateUrl: '/partials/project.part.html'
 		}).otherwise({

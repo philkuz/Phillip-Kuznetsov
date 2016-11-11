@@ -12,8 +12,8 @@ handlers:
   upload: index\.html
 
 - url: /resume
-  static_files: static/files/mlresume.pdf
-  upload: static/files/mlresume.pdf
+  static_files: static/files/resume.pdf
+  upload: static/files/resume.pdf
 
 #static dirs
 - url: /css

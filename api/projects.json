@@ -1,4 +1,32 @@
 [
+    {
+		"title": "ML@B",
+		"link":"https://ml.berkeley.edu",
+		"summary":"Machine Learning at Berkeley (ML@B) is a student-run organization based at UC Berkeley, and is dedicated to fostering a vibrant machine learning community. We provide resources, including education and computer time, to students interested in exploring machine learning.",
+		"thumb":"thumb/mlab_black.png"
+	},{
+		"title": "Data Science with Kaggle Decal",
+		"link":"https://kaggledecal.github.io",
+		"summary":"The Data Science with Kaggle Decal is a student lead course aimed at introducing students from a programming background into the worlds of data science and machine learning. We hold bi-weekly lectures covering topics such as regression, k-nn as well as a comprehensive series on neural networks.",
+		"thumb":"thumb/kaggle.png"
+	},{
+		"title": "OpenBrain",
+		"link":"http://github.com/mlberkeley/openbrain",
+		"summary":"Researching backpropagation algorithms for neural networks. Extension of the deep-rl architecture proposed by DDPG (https://arxiv.org/pdf/1509.02971.pdf). Exploring modifications of the actor-critic paradigm described in the paper to support asynchronous backpropagation updates. Built using TensorFlow.",
+		"thumb":"thumb/mlab.png"
+	},{
+		"title": "RL - Stock Trading",
+		"link":"http://github.com/mlberkeley/sap",
+		"summary":"Building a stock trading system that uses daily stock highs, lows, and changes in price to buy and sell stocks. First iteration uses a linear model trained with reinforcement learning. Implementing a system that uses deep-rl instead. Built using Spark and Keras.",
+		"thumb":"thumb/trading.jpg"
+	},
+    {
+		"title": "Artistic Style Matching",
+		"link":"#",
+		"summary":"Researching how to modify the style loss function proposed in Artistic Style Transfer (http://arxiv.org/abs/1508.06576) to featurize and cluster images based on similar styles. Built using Keras.",
+		"thumb":"thumb/artstyle.jpg"
+	},
+
 	{
 		"title": "BUDAS",
 		"link":"http://calautogolf.github.io",

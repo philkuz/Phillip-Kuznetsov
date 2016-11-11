@@ -47,6 +47,12 @@
 		"thumb": "/thumb/fnn.png"
 	},
 	{
+		"title": "Relativity Simulations",
+		"link": "https://github.com/philkuz/Relativity-Simulations",
+		"summary": "A set of special relativity simulations built for my IB CS Internal Assessment. Intended as a supplement to IB Physics HL unit on Special Relativity.",
+		"thumb": "/thumb/relativity.png"
+	},
+	{
 		"title": "West Connect",
 		"link": "westconnect",
 		"summary": "Transportation application made for my high school. Encourages students to reduce their carbon footprint by displaying their current carbon footprint and display their more environmentally friendly alternatives. ",

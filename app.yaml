@@ -33,7 +33,7 @@ handlers:
 #   static_dir: blogposts
 
 - url: /api
-  static_dir: api
+  static_dir: data
 
 - url: /partials
   static_dir: partials
